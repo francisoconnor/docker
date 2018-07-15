@@ -1,3 +1,3 @@
 FROM httpd
-COPY template /var/www/html
-RUN chmod -R 777 /var/www/html
+COPY template /usr/local/apache2/htdocs
+RUN chmod -R 777 /usr/local/apache2/htdocs

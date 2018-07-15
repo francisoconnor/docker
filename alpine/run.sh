@@ -1,4 +1,3 @@
-#!/bin/bash
-source /etc/apache2/envvars
-apache2
+#!/bin/sh
+httpd
 tail -f /var/log/apache2/*

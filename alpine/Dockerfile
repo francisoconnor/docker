@@ -1,7 +1,7 @@
 FROM alpine
-COPY run.sh run.sh 
-RUN apk update -y && \
-apk add apache2 -y && \
+COPY run.sh /run.sh 
+RUN apk update && \
+apk add apache2 && \
 chmod +x run.sh && \
 mkdir /var/run/apache2
 COPY template /var/www/html
